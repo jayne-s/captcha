@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="captcha_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2b827" translatesAutoresizingMaskIntoConstraints="NO" id="ZdF-nB-RtI" customClass="CaptchaImageView" customModule="captcha_v1" customModuleProvider="target">
+                                <rect key="frame" x="24" y="271" width="164" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nVn-1K-0H7" appends="YES" id="UlZ-Z0-eNT"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2cegf" translatesAutoresizingMaskIntoConstraints="NO" id="iTU-8Z-cN9" customClass="CaptchaImageView" customModule="captcha_v1" customModuleProvider="target">
+                                <rect key="frame" x="230" y="271" width="164" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="971-OG-bsW" appends="YES" id="NHI-Dn-Ynh"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2g7nm" translatesAutoresizingMaskIntoConstraints="NO" id="aYL-rd-otT" customClass="CaptchaImageView" customModule="captcha_v1" customModuleProvider="target">
+                                <rect key="frame" x="22" y="450" width="166" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Bhd-8G-MlD" appends="YES" id="jdm-W8-Ois"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap image with text: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3e-2S-TUW">
+                                <rect key="frame" x="120" y="107" width="175" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2cegf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3q-mD-qda">
+                                <rect key="frame" x="172" y="135" width="107" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2g783" translatesAutoresizingMaskIntoConstraints="NO" id="shc-G6-YCH" customClass="CaptchaImageView" customModule="captcha_v1" customModuleProvider="target">
+                                <rect key="frame" x="231" y="450" width="163" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GcQ-Kl-ETL" appends="YES" id="roB-YD-9R2"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <connections>
+                        <outlet property="image1" destination="ZdF-nB-RtI" id="PUy-IO-35T"/>
+                        <outlet property="image2" destination="iTU-8Z-cN9" id="hwN-0A-4hr"/>
+                        <outlet property="image3" destination="aYL-rd-otT" id="tJ1-o2-fE4"/>
+                        <outlet property="image4" destination="shc-G6-YCH" id="Sm2-hx-Ez2"/>
+                        <outlet property="tap1" destination="971-OG-bsW" id="CUC-tF-Ynr"/>
+                        <outlet property="tap2" destination="Bhd-8G-MlD" id="RD7-Sp-PlE"/>
+                        <outlet property="tap3" destination="GcQ-Kl-ETL" id="n3W-Vt-kdK"/>
+                        <outlet property="tap4" destination="nVn-1K-0H7" id="jLb-G5-K8k"/>
+                        <segue destination="CMi-mb-Xbr" kind="show" identifier="transitiontoSoundSegue" id="gir-a0-H0X"/>
+                        <segue destination="ef1-wY-gfB" kind="show" identifier="transitionToBotSegue" id="v3h-qA-XdU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nVn-1K-0H7">
+                    <connections>
+                        <action selector="tapGestureClicked:" destination="BYZ-38-t0r" id="8t0-Ge-YAJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="971-OG-bsW">
+                    <connections>
+                        <action selector="tapGestureClicked:" destination="BYZ-38-t0r" id="591-td-1QQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Bhd-8G-MlD">
+                    <connections>
+                        <action selector="tapGestureClicked:" destination="BYZ-38-t0r" id="Aom-sf-MON"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="GcQ-Kl-ETL">
+                    <connections>
+                        <action selector="tapGestureClicked:" destination="BYZ-38-t0r" id="fET-i3-oxR"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="103.79464285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="D6g-7E-Rep">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="ef1-wY-gfB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yA6-pT-vZF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are a bot!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibS-qj-XkO">
+                                <rect key="frame" x="104" y="391" width="207" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0tl-Tl-xN8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jff-LX-d99"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGS-Ep-UPE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="841.74107142857144"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="5rz-GB-PzG">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="CMi-mb-Xbr" customClass="SecondViewController" customModule="captcha_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NMF-Dw-gf8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click to play audio captcha: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj7-HL-Xjx">
+                                <rect key="frame" x="100" y="103" width="214" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Wry-1y-Ipw">
+                                <rect key="frame" x="165" y="147" width="134" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Button">
+                                    <imageReference key="image" image="play.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="CMi-mb-Xbr" eventType="touchUpInside" id="jrE-vm-xKQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vZL-Bl-Zem">
+                                <rect key="frame" x="69" y="502" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="cgy3e"/>
+                                <connections>
+                                    <action selector="answerButtonsPressed:" destination="CMi-mb-Xbr" eventType="touchUpInside" id="0fG-Pj-W1G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DHe-7U-X89">
+                                <rect key="frame" x="246" y="502" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="t6phm"/>
+                                <connections>
+                                    <action selector="answerButtonsPressed:" destination="CMi-mb-Xbr" eventType="touchUpInside" id="dkk-W7-FiF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="68H-P6-pNP">
+                                <rect key="frame" x="84" y="596" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="x6tj8"/>
+                                <connections>
+                                    <action selector="answerButtonsPressed:" destination="CMi-mb-Xbr" eventType="touchUpInside" id="RTN-79-XQS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1ml-3e-yX6">
+                                <rect key="frame" x="245" y="596" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="rv6te"/>
+                                <connections>
+                                    <action selector="answerButtonsPressed:" destination="CMi-mb-Xbr" eventType="touchUpInside" id="xHg-F1-L5f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LCj-c0-oW9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MNa-ri-Fzh"/>
+                    <connections>
+                        <outlet property="answer1" destination="vZL-Bl-Zem" id="yFs-Ej-zPA"/>
+                        <outlet property="answer2" destination="DHe-7U-X89" id="F3a-yA-Ek6"/>
+                        <outlet property="answer3" destination="68H-P6-pNP" id="qYE-ow-a82"/>
+                        <outlet property="answer4" destination="1ml-3e-yX6" id="elr-HA-yza"/>
+                        <outlet property="playButton" destination="Wry-1y-Ipw" id="BID-0L-rCF"/>
+                        <segue destination="NRJ-Yy-2Rx" kind="show" identifier="transitionToFinalView" id="LEN-ar-dW5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCM-C4-NRa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724.63768115942037" y="103.79464285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pBD-tB-cZr">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="NRJ-Yy-2Rx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="opC-bn-fEC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the super cool, super secret screen!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yy6-Gq-ShE">
+                                <rect key="frame" x="23" y="226" width="369" height="444"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="36"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C0C-84-on6"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mkm-S2-i9f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="arl-uS-8eJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1495.6521739130435" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2b827" width="200" height="50"/>
+        <image name="2cegf" width="200" height="50"/>
+        <image name="2g783" width="200" height="50"/>
+        <image name="2g7nm" width="200" height="50"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
